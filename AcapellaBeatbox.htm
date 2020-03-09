@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Page Title</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+		<style>
+		 
+		    #line1 button {
+		        display: inline-block;
+				width: 50px;
+		        height: 50px;
+		        background-color: green;
+		        border: none;
+		    }
+		    #line2 button {
+		        display: inline-block;
+				width: 50px;
+		        height: 50px;
+		        background-color: green;
+		        border: none;
+		    }
+		    #line3 button {
+		        display: inline-block;
+				width: 50px;
+		        height: 50px;
+		        background-color: green;
+		        border: none;
+		    }
+		    #line4 button {
+		        display: inline-block;
+				width: 50px;
+		        height: 50px;
+		        background-color: green;
+		        border: none;
+		    }
+			.panel {
+				display: none;
+			}
+			.show {
+				display: block;
+			}
+			.gone {
+				display: none;
+			}
+		</style>
+	</head>
+	<body ng-app="myApp" ng-controller="myCtrl">
+
+		<div id="files_gone" class="files">
+			<p>Enter the filenames.</p>
+	        <div>
+	            <input type="text" ng-model="qline1" required>
+	            <input type="text" ng-model="wline1" required>
+	            <input type="text" ng-model="eline1" required>
+	            <input type="text" ng-model="rline1" required>
+	        </div>
+	         <div>
+	            <input type="text" ng-model="aline2" required>
+	            <input type="text" ng-model="sline2" required>
+	            <input type="text" ng-model="dline2" required>
+	            <input type="text" ng-model="fline2" required>
+	        </div>
+	         <div>
+	            <input type="text" ng-model="zline3" required>
+	            <input type="text" ng-model="xline3" required>
+	            <input type="text" ng-model="cline3" required>
+	            <input type="text" ng-model="vline3" required>
+	        </div>
+	         <div>
+	            <input type="text" ng-model="tline4" required>
+	            <input type="text" ng-model="yline4" required>
+	            <input type="text" ng-model="uline4" required>
+	            <input type="text" ng-model="iline4" required>
+	        </div>
+			<button onclick="show_panel()">SUMBIT</button>
+		</div>
+			
+			<div id="music_box" class="panel">
+			<div id="line1">
+				<button onclick = "Qline1()"><audio id="s1" src = "{{qline1 + '.m4a'}}"></audio></button>
+				<button onclick = "Wline1()"><audio id="s2" src = "{{wline1 + '.m4a'}}"></audio></button>
+				<button onclick = "Eline1()"><audio id="s3" src = "{{eline1 + '.m4a'}}"></audio></button>
+				<button onclick = "Rline1()"><audio id="s4" src = "{{rline1 + '.m4a'}}"></audio></button>
+			</div>
+			<div id="line2">
+				<button onclick = "Aline2()"><audio id="s5" src = "{{aline2 + '.m4a'}}"></audio></button>
+				<button onclick = "Sline2()"><audio id="s6" src = "{{sline2 + '.m4a'}}"></audio></button>
+				<button onclick = "Dline2()"><audio id="s7" src = "{{dline2 + '.m4a'}}"></audio></button>
+				<button onclick = "Fline2()"><audio id="s8" src = "{{fline2 + '.m4a'}}"></audio></button>
+			</div>
+			<div id="line3">
+				<button onclick = "Zline3()"><audio id="s9" src = "{{zline3 + '.m4a'}}"></audio></button>
+				<button onclick = "Xline3()"><audio id="s10" src = "{{xline3 + '.m4a'}}"></audio></button>
+				<button onclick = "Cline3()"><audio id="s11" src = "{{cline3 + '.m4a'}}"></audio></button>
+				<button onclick = "Vline3()"><audio id="s12" src = "{{vline3 + '.m4a'}}"></audio></button>
+			</div>
+			<div id="line4">
+				<button onclick = "Tline4()"><audio id="s13" src = "{{tline4 + '.m4a'}}"></audio></button>
+				<button onclick = "Yline4()"><audio id="s14" src = "{{yline4 + '.m4a'}}"></audio></button>
+				<button onclick = "Uline4()"><audio id="s15" src = "{{uline4 + '.m4a'}}"></audio></button>
+				<button onclick = "Iline4()"><audio id="s16" src = "{{uline4 + '.m4a'}}"></audio></button>
+			</div>
+				<button onclick = "gone_panel()">BACK</button>
+			</div>
+			
+	
+	  
+
+	    <script>
+	           function Qline1() {
+	                var audio = document.getElementById("s1");
+                    audio.play();
+	        }
+	            function Wline1() {
+	                var audio = document.getElementById("s2");
+                    audio.play();
+	        }
+	            function Eline1() {
+	                var audio = document.getElementById("s3");
+                    audio.play();
+	        }
+	            function Rline1() {
+	                var audio = document.getElementById("s4");
+                    audio.play();
+	        }
+	            function Aline2() {
+	                var audio = document.getElementById("s5");
+                    audio.play();
+	        }
+	            function Sline2() {
+	                var audio = document.getElementById("s6");
+                    audio.play();
+	        }
+	            function Dline2() {
+	                var audio = document.getElementById("s7");
+                    audio.play();
+	        }
+	            function Fline2() {
+	                var audio = document.getElementById("s8");
+                    audio.play();
+	        }
+	            function Zline3() {
+	                var audio = document.getElementById("s9");
+                    audio.play();
+	        }
+	            function Xline3() {
+	                var audio = document.getElementById("s10");
+                    audio.play();
+	        }
+	            function Cline3() {
+	                var audio = document.getElementById("s11");
+                    audio.play();
+	        }
+	            function Vline3() {
+	                var audio = document.getElementById("s12");
+                    audio.play();
+	        }
+	            function Tline4() {
+	                var audio = document.getElementById("s13");
+                    audio.play();
+	        }
+	            function Yline4() {
+	                var audio = document.getElementById("s14");
+                    audio.play();
+	        }
+	            function Uline4() {
+	                var audio = document.getElementById("s15");
+                    audio.play();
+	        }
+	            function Iline4() {
+	                var audio = document.getElementById("s16");
+                    audio.play();
+	        }
+	    </script>
+		<script src="front.js"></script>
+		<script>
+			function show_panel(){
+				document.getElementById("music_box").classList.add("show");
+				document.getElementById("files_gone").classList.add("gone");
+			}
+			function gone_panel() {
+				document.getElementById("music_box").classList.remove("show");
+				document.getElementById("files_gone").classList.remove("gone");
+			}
+		</script>
+	</body>
+</html>
