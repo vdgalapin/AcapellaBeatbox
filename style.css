@@ -35,17 +35,38 @@
 			.gone {
 				display: none;
 			}
-			.rightbutton {
-				width: 0;
-				height: 0;
-				border-top: 25px solid transparent;
-				border-left: 50px solid #555;
-				border-bottom: 25px solid transparent;
+			.nextbutton {
+				position: absolute;
+				left: 208px;
+				border-radius: 15px;
+				width: 30px;
+				height: 30px;
+				background-color: black;
+				color: white;
+				border-color: black;
 			}
-			.leftbutton {
-				width: 0;
-				height: 0;
-				border-top: 25px solid transparent;
-				border-right: 50px solid #555;
-				border-bottom: 25px solid transparent;
+			.previousbutton {
+				border-radius: 15px;
+				width: 30px;
+				height: 30px;
+				background-color: black;
+				color: white;
+				border-color: black;
+			}
+			.nextbutton:hover {
+				transition: 0.4s;
+				background-color: gray;
+				color: black;
+				border-color: gray;
+			}
+			.previousbutton:hover {
+				transition: 0.4s;
+				background-color: gray;
+				color: black;
+				border-color: gray;
+			}
+			input {
+				width: 50px;
+				margin-bottom: 2px;
+				
 			}
