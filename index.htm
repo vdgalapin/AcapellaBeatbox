@@ -1,16 +1,13 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Acapella Music Box</title>
+		<title>Acappella BeatBox</title>
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-		<!-- The CSS for the music box -->
-		<link rel="stylesheet" type="text/css" href="BoardCSS.css" />
+		<link rel="stylesheet" type="text/css" href="style.css"/>
 	</head>
-	
-	<!-- Defines the AngularJS application-->
 	<body ng-app="myApp" ng-controller="myCtrl">
 
-		<div id="file_box" style='display:block'>
+		<div id="files_gone" class="files">
 			<p>Enter the filenames.</p>
 	        <div>
 	            <input type="text" ng-model="qline1" required>
@@ -36,43 +33,38 @@
 	            <input type="text" ng-model="uline4" required>
 	            <input type="text" ng-model="iline4" required>
 	        </div>
-			
+			<button onclick="show_panel()" class="nextbutton">&#8250;</button>
 		</div>
 			
-			<div id="music_box" style='display:none'>
-			<div id="Musicline">
-				<button onclick = "Qline1()"><audio id="s1" src = "{{qline1+ '.m4a'}}"></audio></button>
+			<div id="music_box" class="panel">
+			<div id="line1">
+				<button onclick = "Qline1()"><audio id="s1" src = "{{qline1 + '.m4a'}}"></audio></button>
 				<button onclick = "Wline1()"><audio id="s2" src = "{{wline1 + '.m4a'}}"></audio></button>
 				<button onclick = "Eline1()"><audio id="s3" src = "{{eline1 + '.m4a'}}"></audio></button>
 				<button onclick = "Rline1()"><audio id="s4" src = "{{rline1 + '.m4a'}}"></audio></button>
 			</div>
-			<div id="Musicline">
+			<div id="line2">
 				<button onclick = "Aline2()"><audio id="s5" src = "{{aline2 + '.m4a'}}"></audio></button>
 				<button onclick = "Sline2()"><audio id="s6" src = "{{sline2 + '.m4a'}}"></audio></button>
 				<button onclick = "Dline2()"><audio id="s7" src = "{{dline2 + '.m4a'}}"></audio></button>
 				<button onclick = "Fline2()"><audio id="s8" src = "{{fline2 + '.m4a'}}"></audio></button>
 			</div>
-			<div id="Musicline">
+			<div id="line3">
 				<button onclick = "Zline3()"><audio id="s9" src = "{{zline3 + '.m4a'}}"></audio></button>
 				<button onclick = "Xline3()"><audio id="s10" src = "{{xline3 + '.m4a'}}"></audio></button>
 				<button onclick = "Cline3()"><audio id="s11" src = "{{cline3 + '.m4a'}}"></audio></button>
 				<button onclick = "Vline3()"><audio id="s12" src = "{{vline3 + '.m4a'}}"></audio></button>
 			</div>
-			<div id="Musicline">
+			<div id="line4">
 				<button onclick = "Tline4()"><audio id="s13" src = "{{tline4 + '.m4a'}}"></audio></button>
 				<button onclick = "Yline4()"><audio id="s14" src = "{{yline4 + '.m4a'}}"></audio></button>
 				<button onclick = "Uline4()"><audio id="s15" src = "{{uline4 + '.m4a'}}"></audio></button>
 				<button onclick = "Iline4()"><audio id="s16" src = "{{uline4 + '.m4a'}}"></audio></button>
 			</div>
+				<button onclick = "gone_panel()" class="previousbutton">&#8249;</button>
 			</div>
-		<button onclick="show_panel()">SUMBIT</button>
-	
-	  
-		<!-- This will play the audion when box is click-->
-	    <script src="PlayMusic.js"></script>
-		<!-- This is the AngularJS that extends to HTML-->
-		<script src="AngularModule.js"></script>
-		<!-- The Javascript Language allows to show and hide the panel-->
-		<script src="BoardPanel.js"></script>
+		<script src="audio.js"></script>
+		<script src="front.js"></script>
+		<script src="panel.js"></script>
 	</body>
 </html>

@@ -1,4 +1,4 @@
- function Qline1() {
+			function Qline1() {
 	                var audio = document.getElementById("s1");
                     audio.play();
 	        }
