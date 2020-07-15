@@ -1,27 +1,71 @@
 #Musicline button {
     display: inline-block;
-	width: 50px;
-    height: 50px;
+	width: 58px;
+    height: 55px;
+	outline:none;
     background-color: green;
     border: none;
 	border-radius: 5px;
 }
 
+/* This is a style for the button */
+#submit_button {
+  display: inline-block;
+  padding: 5px 8px;
+  font-size: 6px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 3px #999;
+  position: absolute;
+}
+
+button:hover {
+	background-color: #3e8e41
+	}
+
+button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 2px #666;
+  transform: translateY(2px);
+}
+/*#################################################################################################################*/
 
 
 input {
-	width: 4%;
-	height: 2%;
+	display:inline-block;
+	width: 50px;
+	height: 50px;
+	border-radius:5px
+	text-align: center;
+	margin-top: 2px;
 }
 
-#files_gone {
-	border: solid black 2px;
-	position: absolute;
-	margin: 5% 25% 25% 25%;
-	width: 50%;
-	height: 50%;
-
+#file_box  {
+	border: solid green 2px;
+	border-radius: 10px;
+	margin: 0 auto;
+	margin-top: 10%;
+	height: 350px;
+	width: 350px;
 }
 #music_box {
-	margin: auto;
+	border: solid green 2px;
+	border-radius: 10px;
+	margin: 0 auto;
+	margin-top: 10%;
+	height: 350px;
+	width: 350px;
+}
+	
+#Inputline {
+	margin: 0% 15% 0% 15%;
+}
+#Musicline {
+	margin: 0% 15% 0% 15%;
 }

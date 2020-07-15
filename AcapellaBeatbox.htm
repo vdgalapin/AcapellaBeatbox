@@ -11,26 +11,26 @@
 	<body ng-app="myApp" ng-controller="myCtrl">
 
 		<div id="file_box" style='display:block'>
-			<p>Enter the filenames.</p>
-	        <div>
+			
+	        <div id="Inputline" style='margin-top: 15%'>
 	            <input type="text" ng-model="qline1" required>
 	            <input type="text" ng-model="wline1" required>
 	            <input type="text" ng-model="eline1" required>
 	            <input type="text" ng-model="rline1" required>
 	        </div>
-	         <div>
+	         <div id="Inputline">
 	            <input type="text" ng-model="aline2" required>
 	            <input type="text" ng-model="sline2" required>
 	            <input type="text" ng-model="dline2" required>
 	            <input type="text" ng-model="fline2" required>
 	        </div>
-	         <div>
+	         <div id="Inputline">
 	            <input type="text" ng-model="zline3" required>
 	            <input type="text" ng-model="xline3" required>
 	            <input type="text" ng-model="cline3" required>
 	            <input type="text" ng-model="vline3" required>
 	        </div>
-	         <div>
+	         <div id="Inputline">
 	            <input type="text" ng-model="tline4" required>
 	            <input type="text" ng-model="yline4" required>
 	            <input type="text" ng-model="uline4" required>
@@ -40,7 +40,7 @@
 		</div>
 			
 			<div id="music_box" style='display:none'>
-			<div id="Musicline">
+			<div id="Musicline" style='margin-top: 15%'>
 				<button onclick = "Qline1()"><audio id="s1" src = "{{qline1+ '.m4a'}}"></audio></button>
 				<button onclick = "Wline1()"><audio id="s2" src = "{{wline1 + '.m4a'}}"></audio></button>
 				<button onclick = "Eline1()"><audio id="s3" src = "{{eline1 + '.m4a'}}"></audio></button>
@@ -65,7 +65,7 @@
 				<button onclick = "Iline4()"><audio id="s16" src = "{{uline4 + '.m4a'}}"></audio></button>
 			</div>
 			</div>
-		<button onclick="show_panel()">SUMBIT</button>
+		<button onclick="submit()" id="submit_button">PLAY</button>
 	
 	  
 		<!-- This will play the audion when box is click-->
